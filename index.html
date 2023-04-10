@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+    <style>
+      body {
+        background-color: #f5f0fe;
+      }
+
+      h1 {
+        text-align: center;
+        color: #a149fa;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 90%;
+      }
+
+      p {
+        list-style: 1.5;
+        font-size: 13px;
+        text-align: justify;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        font-size: 18px;
+        display: block;
+        margin: 30px auto;
+        background-color: #612eda;
+        color: #ffffff;
+        padding: 15px 120px;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        color: #612eda;
+        background-color: #ffffff;
+        border: 2px double #a149fa;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        /* box-shadow: inset 0px 5px 25px 0 #000, inset 0 10px 10px 0px #ccc,
+          inset 0 15px 5px 0px #fff; */
+        /* box-shadow: inset 5px 5px 5px rgba(0 0 0 0.5); */
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo {
+        margin: 0 auto;
+        display: block;
+        width: 180px;
+      }
+
+      .learn-more {
+        color: #612eda;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      .website {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- to fix all the following shown in one page, we put it in a container. -->
+    <div class="container">
+      <h1>
+        <img
+          alt="SheCodes"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/341/original/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png?1672050074"
+          class="logo"
+        /><br />I Love Yogurt
+      </h1>
+      <h2>Especially Greek Yogurt</h2>
+      <!-- <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/331/original/greek-yogurt-3.jpg?1672049411"
+        alt="greek yogurt"
+      /> -->
+      <img
+        src="https://images.prismic.io/gatsbyshopify-test/d3605783-2747-495a-b54b-2904c58c474c_IMG_2996.jpg?auto=compress%2Cformat&amp;rect=0%2C87%2C1313%2C739&amp;w=1600&amp;h=900"
+        alt="Greek yogurt"
+      />
+      <p>
+        Strained yogurt, Greek yogurt, yogurt cheese, sack yogurt, or kerned
+        yogurt is yogurt that has been strained to remove most of its whey,
+        resulting in a thicker consistency than normal unstrained yogurt, while
+        still preserving the distinctive sour taste of yogurt.
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <br />
+      <br />
+
+      <hr />
+
+      <button class="buy-button"><strong>ORDER GREEK YOGURT</strong></button>
+      <p class="footer">
+        Coded by
+        <a href="https://github.com/Faride-Dm" target="_blank" class="website">
+          <strong> 👩‍💻 Faride Danesh </strong></a
+        >
+        with HTML, CSS and JavaScript
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address");
+        let emoji = prompt("What is your favorite emoji?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert("Thank you ${name}, We'll be in touch! ${emoji}");
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
